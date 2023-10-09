@@ -3,7 +3,7 @@ import './Wishlist.css'
 
 function Wishlist() {
   return (
-    <div className='WishlistContainer'>List of Products</div>
+    <div className='WishlistContainer'>Changed Wishlist</div>
   )
 }
 
