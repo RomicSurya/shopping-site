@@ -1,0 +1,24 @@
+.shopContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+.topContainer{
+    width: 100%;
+    border:0.1px solid #bfbfbf85;
+    height: 175px;
+
+}
+.leftContainer{
+    width: 18%;
+    height: 500px;
+    border: solid #bfbfbf85;
+    border-width: 0 0.1px 0.1px 0;
+
+}
+.righContainer{
+    width: 81%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 0 10px 0;
+}
+
