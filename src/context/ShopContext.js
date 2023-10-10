@@ -13,12 +13,11 @@ const getWishlistItems = () => {
 export const ShopContextProvider = (props) => {
     const [wishlistItems, setWishlistItems] = useState(getWishlistItems())
     const addToWishlist = (itemId) => {
-        setWishlistItems((prev)=>{
-           
-        })
-       
+        setWishlistItems((prev)=>({...prev, [itemId]:prev[itemId]+1}))
     }
-
-    const getValues = {wishlistItems,addToWishlist}
+    const removeToWishlist = (itemId) => {
+        setWishlistItems((prev)=>({...prev, [itemId]:prev[itemId]-1}))
+    }
+    const getValues = {wishlistItems,addToWishlist,removeToWishlist}
   return <shopContext.Provider value={getValues}>{props.children}</shopContext.Provider>
 }
