@@ -8,12 +8,16 @@ function Wishlist() {
   const {wishlistItems} = useContext(shopContext)
   return (
     <div className='WishlistContainer'>
-      {ProductStore.map((productItems)=>{
+      <div className='myWishlist'></div>
+      <div className='wishlistItems'>
+      {ProductStore.map((productItems)=> 
+      {
         if(wishlistItems[productItems.id] !== 0){
-          (<WishlistProducts data={productItems}/>)
+          return <WishlistProducts data={productItems}/>
         }
       }
       )}
+      </div>
     </div>
   )
 }

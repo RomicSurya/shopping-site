@@ -16,7 +16,7 @@ export const ShopContextProvider = (props) => {
         setWishlistItems((prev)=>({...prev, [itemId]:prev[itemId]+1}))
     }
     const removeToWishlist = (itemId) => {
-        setWishlistItems((prev)=>({...prev, [itemId]:prev[itemId]-1}))
+        setWishlistItems((prev)=>({...prev, [itemId]:prev[itemId]=0}))
     }
     const getValues = {wishlistItems,addToWishlist,removeToWishlist}
   return <shopContext.Provider value={getValues}>{props.children}</shopContext.Provider>
