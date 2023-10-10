@@ -1,17 +1,22 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './Products.css'
 import {Heart} from 'phosphor-react'
+import {shopContext} from '../../../../context/ShopContext'
 
 function Products(props) {
+
+  const {wishlistItems,addToWishlist} = useContext(shopContext)
   const {id,productImage,productName,price,productDis} = props.data
-  function Wishlist(){
-    console.log("Wishlisted");
-  }
+  console.log(wishlistItems);
+
+ 
+
+
   return (
     <div className='box'>
       <img className='productImage' src={productImage}/>
       <div className='productDisContainer'>
-      <button className='Wishlistbtn' onClick={()=>Wishlist()}><Heart className='WishlistbtnIcon'/><b>Wishlist</b></button>
+      <button className='Wishlistbtn' onClick={()=>addToWishlist(id)}><Heart className='WishlistbtnIcon'/><b>Wishlist</b></button>
         <p className='productName'><b>{productName}</b></p>
         <p className='productDis'>{productDis}</p>
         <p className='price'><b>Rs.{price}</b></p>

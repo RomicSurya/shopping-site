@@ -3,10 +3,12 @@ import './App.css';
 import Navbar from './components/navbar/Navbar';
 import Shop from './components/pages/shop/Shop';
 import Wishlist from './components/pages/Wishlist/Wishlist';
+import { ShopContextProvider } from './context/ShopContext';
 
 function App() {
   return (
     <div className="App">
+      <ShopContextProvider>
       <Router>
       <Navbar/>
       <Routes>
@@ -14,6 +16,7 @@ function App() {
         <Route path='/Wishlist' element={<Wishlist/>}/>
       </Routes>
       </Router>
+      </ShopContextProvider>
     </div>
   );
 }
