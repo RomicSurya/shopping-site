@@ -3,7 +3,7 @@ import { Bag, Heart} from 'phosphor-react';
 import {BsPerson} from 'react-icons/bs'
 import './Navbar.css'
 import { Link } from 'react-router-dom';
-import logo from '../../assets/logo.png'
+import logo from '../../assets/shoppingLogo.jpg'
 
 
 function Navbar() {
