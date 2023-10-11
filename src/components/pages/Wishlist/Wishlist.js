@@ -8,7 +8,7 @@ function Wishlist() {
   const {wishlistItems} = useContext(shopContext)
   return (
     <div className='WishlistContainer'>
-      <div className='myWishlist'></div>
+      <div className='myWishlist'><h2 className='myWishlistTitle'>My Wishlist Items</h2></div>
       <div className='wishlistItems'>
       {ProductStore.map((productItems)=> 
       {
