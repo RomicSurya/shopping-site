@@ -31,10 +31,18 @@
     align-items: center;
     transition: 0.2s;
     margin-left: 2px; 
+    transition: 0.1s;
+}
+.moveToBagBtn:hover{
+    border: 1px solid black;
 }
 .xIcon{
-
+    transition: 0.1s;
     color: gray;
+}
+.xIcon:hover{
+    scale: 1.08;
+    color: rgb(61, 61, 61);
 }
 .removeBtn{
     background-color: transparent;

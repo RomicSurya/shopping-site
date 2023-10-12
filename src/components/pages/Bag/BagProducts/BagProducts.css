@@ -1,0 +1,23 @@
+.bagItemsBox{
+    width: 200px;
+    height: 380px;
+    margin:35px;
+    transition: 0.2s;
+}
+
+
+.bagProductImage{
+    width: 200px;
+    height: 270px;
+}
+.bagProductDisContainer{
+    font-size: .9rem;
+    text-align: left;
+    margin-left: 10px;
+}
+.bagProductDis{
+    font-size: .8rem;
+    height: 30px;
+    color: gray;
+    margin: -8px 0 -10px 0px;
+}

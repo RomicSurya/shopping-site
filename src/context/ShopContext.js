@@ -12,12 +12,17 @@ const getWishlistItems = () => {
 
 export const ShopContextProvider = (props) => {
     const [wishlistItems, setWishlistItems] = useState(getWishlistItems())
+    const [bagItems, setBagItems] = useState(getWishlistItems())
     const addToWishlist = (itemId) => {
         setWishlistItems((prev)=>({...prev, [itemId]:prev[itemId]+1}))
     }
     const removeToWishlist = (itemId) => {
         setWishlistItems((prev)=>({...prev, [itemId]:prev[itemId]=0}))
     }
-    const getValues = {wishlistItems,addToWishlist,removeToWishlist}
+    const moveToBag = (itemId) => {
+        setBagItems((prev)=>({...prev, [itemId]:wishlistItems[itemId]}));
+        removeToWishlist(itemId);
+    }
+    const getValues = {wishlistItems,addToWishlist,removeToWishlist,moveToBag,bagItems}
   return <shopContext.Provider value={getValues}>{props.children}</shopContext.Provider>
 }
