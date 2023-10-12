@@ -4,6 +4,7 @@ import Navbar from './components/navbar/Navbar';
 import Shop from './components/pages/shop/Shop';
 import Wishlist from './components/pages/Wishlist/Wishlist';
 import { ShopContextProvider } from './context/ShopContext';
+import Bag from './components/pages/Bag/Bag';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Shop/>}/>
         <Route path='/Wishlist' element={<Wishlist/>}/>
+        <Route path='/Bag' element={<Bag/>}/>
       </Routes>
       </Router>
       </ShopContextProvider>

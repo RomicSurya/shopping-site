@@ -37,8 +37,9 @@ function Navbar() {
         </div>
        
         <div className='bag'>
+            <Link to={'/Bag'} style={{textDecoration:'none'}}>
             <Bag className='icons'/>
-            <p className='iconDiscriptions'>Bag</p>
+            <p className='iconDiscriptions'>Bag</p></Link>
             </div>
 
             </div>
