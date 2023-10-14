@@ -10,8 +10,8 @@ function Navbar() {
   return (
     <div>
         <div className='navbarContainer'>
-        <Link to={'/'}><img src={logo} className='logo'/></Link>
-
+      <Link to={'/'}><img src={logo} className='logo'/></Link>
+       
         <div className='LISTITEMS'>
         <ul>
             <li>MEN</li>

@@ -1,11 +1,21 @@
 .bagItemsBox{
-    width: 200px;
-    height: 380px;
-    margin:35px;
+    width: 90%;
+    padding: 10px;
+    height: 270px;
+    display: flex;
+    margin: 35px;
+    transition: 0.2s;
+    border: 0.1px solid #bfbfbf85;
+    border-radius: 5px;
+}
+.removeItemBagIcon{
+    display: flex;
+    position: inherit;
     transition: 0.2s;
 }
-
-
+.removeItemBagIcon:hover{
+  scale: 1.08;
+}
 .bagProductImage{
     width: 200px;
     height: 270px;
@@ -14,10 +24,35 @@
     font-size: .9rem;
     text-align: left;
     margin-left: 10px;
+    width: 50%;
 }
 .bagProductDis{
     font-size: .8rem;
     height: 30px;
     color: gray;
     margin: -8px 0 -10px 0px;
+}
+.selectSize{
+    border: 0.1px solid #bfbfbf85;
+    display: block;
+}
+.selectSize:focus{
+    outline: none;  
+}
+.bagAmount{
+    text-align: center;
+    border: 0.1px solid #bfbfbf85;
+    display: inline-block;
+    width: 20px;
+}
+.bagAmount:focus{
+    outline: none;
+}
+.decreasebtn{
+    border: 0.1px solid #bfbfbf85;
+    border-radius: 9px 0 0 9px;
+}
+.increasebtn{
+    border: 0.1px solid #bfbfbf85;
+    border-radius: 0 9px 9px 0;
 }
