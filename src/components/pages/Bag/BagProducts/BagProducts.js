@@ -5,7 +5,8 @@ import './BagProducts.css'
 
 function BagProducts(props) {
     const {id,productImage,productName,price,productDis,} = props.data
-    const {removeToWishlist} = useContext(shopContext)
+    const {removeToWishlist,bagItems} = useContext(shopContext)
+    console.log(bagItems);
   return (
     <div className='bagItemsBox'>
     <img className='bagProductImage' src={productImage}/>

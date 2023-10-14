@@ -10,6 +10,7 @@ console.log(bagItems);
   return (
     <div className='bagContainer'>
         <div className='bagTitle'>Title</div>
+        <div className='bagPayment'></div>
         <div className='bagItems'>{ProductStore.map((products)=>{
             if(bagItems[products.id] !== 0){
                 return <BagProducts data={products}/>

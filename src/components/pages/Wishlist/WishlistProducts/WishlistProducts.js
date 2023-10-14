@@ -4,7 +4,7 @@ import {BsXCircle,BsFillXCircleFill} from 'react-icons/bs'
 import {shopContext} from '../../../../context/ShopContext'
 
 function WishlistProducts(props) {
-    const {id,productImage,productName,price,productDis,} = props.data
+    const {id,productImage,productName,price} = props.data
     const {removeToWishlist,moveToBag} = useContext(shopContext)
   return (
     <div className='wishlistItemsBox'>
@@ -14,7 +14,7 @@ function WishlistProducts(props) {
       <p className='wishlistProductName'><b>{productName}</b></p>
       <p className='wishlistPrice'><b>Rs.{price}</b></p>
     </div>
-    <button className='moveToBagBtn' onClick={()=>moveToBag(id)}>MOVE TO BAG</button>
+    <button className='moveToBagBtn' onClick={() => moveToBag(id)}>MOVE TO BAG</button>
   </div>
   )
   }
