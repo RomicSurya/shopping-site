@@ -13,7 +13,7 @@ function Navbar() {
       <Link to={'/'}><img src={logo} className='logo'/></Link>
        
         <div className='LISTITEMS'>
-        <ul>
+        <ul className='navCategory'>
             <li>MEN</li>
             <li>WOMEN</li>
             <li>KIDS</li>

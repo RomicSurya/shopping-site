@@ -1,5 +1,5 @@
 .bagItemsBox{
-    width: 90%;
+    width: 75%;
     padding: 10px;
     height: 270px;
     display: flex;
@@ -12,6 +12,7 @@
     display: flex;
     position: inherit;
     transition: 0.2s;
+    cursor: pointer;
 }
 .removeItemBagIcon:hover{
   scale: 1.08;

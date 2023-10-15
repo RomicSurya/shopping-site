@@ -2,7 +2,11 @@
     width: 200px;
     height: 450px;
     margin: 0px 25px;
-    transition: 0.2s;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.wishlistItemsBox:hover{
+    scale: 1.02;
 }
 .wishlistProductImage{
     width: 200px;
@@ -32,6 +36,7 @@
     transition: 0.2s;
     margin-left: 2px; 
     transition: 0.1s;
+    cursor: pointer;
 }
 .moveToBagBtn:hover{
     border: 1px solid black;
@@ -39,6 +44,7 @@
 .xIcon{
     transition: 0.1s;
     color: gray;
+    cursor: pointer;
 }
 .xIcon:hover{
     scale: 1.08;

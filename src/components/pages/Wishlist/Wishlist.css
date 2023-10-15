@@ -9,8 +9,9 @@
     align-items: end;
     top: 85px;
     position: fixed;
-    background-color: antiquewhite;
-
+}
+.myWishlist h2{
+    margin-left: 20px;
 }
 .wishlistItems{
     display: flex;

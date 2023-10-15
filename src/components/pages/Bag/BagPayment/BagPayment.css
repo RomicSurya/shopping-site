@@ -1,6 +1,17 @@
 .bagPaymentDetailsCon{
-    width: 500px;
-    display: flex;
-    justify-content: space-around;
-
+    width: 100%;
+    display: block;
+    font-size: 0.9rem;
+    text-align: left;
+    margin: 20px 0;
+}
+.payProductName{
+    display: inline-block;
+    margin-left: 20px;
+    width: 40%;
+}
+.price{
+    display: inline-block;
+    margin-left: 100px;
+    width: 30%;
 }

@@ -2,7 +2,8 @@
     width: 200px;
     height: 380px;
     margin:35px;
-    transition: 0.2s;
+    transition: 0.3s;
+    cursor: pointer;
 }
 
 
@@ -33,6 +34,7 @@
     align-items: center;
     transition: 0.2s;
     margin-left: 2px; 
+    cursor: pointer;
 }
 .WishlistbtnIcon{
     font-size: 1.3rem;
@@ -40,7 +42,7 @@
     color: gray;
 }
 .box:hover{
-    box-shadow: 0px 0px 6px 0.1px gray;
+    scale: 1.02;
 }
 .Wishlistbtn:hover{
     box-shadow: 0px 3px 5px 0.1px blueviolet;
