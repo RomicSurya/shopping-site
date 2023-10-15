@@ -6,11 +6,13 @@ import BagProducts from './BagProducts/BagProducts';
 import BagPayment from './BagPayment/BagPayment';
 
 function Bag() {
-const {bagItems} = useContext(shopContext)
-console.log(bagItems);
+const {bagItems,getTotalAmount} = useContext(shopContext)
+const totalAmountOfBag = getTotalAmount()
   return (
     <div className='bagContainer'>
-        <div className='bagTitle'>Title</div>
+        <div className='bagTitle'>
+            <h3>Your Bag Items</h3>
+        </div>
         <div className='bagBody'>
         <div className='bagItems'>{ProductStore.map((products)=>{
             if(bagItems[products.id] !== 0){
@@ -26,7 +28,7 @@ console.log(bagItems);
             }
         })}
         <hr></hr>
-        <div className='totalAmount'><span>Total Amount</span><span><b>₹</b></span></div>
+        <div className='totalAmount'><span>Total Amount</span><span><b>₹{totalAmountOfBag}</b></span></div>
         </div>
          </div>
          </div>

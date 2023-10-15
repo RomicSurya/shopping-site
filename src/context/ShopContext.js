@@ -13,6 +13,17 @@ const getWishlistItems = () => {
 export const ShopContextProvider = (props) => {
     const [wishlistItems, setWishlistItems] = useState(getWishlistItems())
     const [bagItems, setBagItems] = useState(getWishlistItems())
+
+    const getTotalAmount = () => {
+        let total = 0;
+        for (const item in bagItems) {
+            if(bagItems[item] > 0){
+               let itemInfo = ProductStore.find((product) => product.id === Number(item));
+                total +=  bagItems[item] * itemInfo.price;
+            }
+        }
+        return total;
+    }
     const addToWishlist = (itemId) => {
         setWishlistItems((prev)=>({...prev, [itemId]:prev[itemId]+1}))
     }
@@ -32,6 +43,6 @@ export const ShopContextProvider = (props) => {
     const decreaseBagItem = (itemId) => {
         setBagItems((prev)=>({...prev, [itemId]:prev[itemId]-1}))
     }
-    const getValues = {wishlistItems,addToWishlist,removeToWishlist,moveToBag,bagItems,removeFromBag,increaseBagItem,decreaseBagItem}
+    const getValues = {wishlistItems,addToWishlist,removeToWishlist,moveToBag,bagItems,removeFromBag,increaseBagItem,decreaseBagItem,getTotalAmount}
   return <shopContext.Provider value={getValues}>{props.children}</shopContext.Provider>
 }

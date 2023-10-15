@@ -19,7 +19,7 @@ function BagPayment(props) {
     console.log(bagItemsAmount());
   return (
     <div className='bagPaymentDetailsCon'>
-        <span>{productName}</span><span><b>₹{price}</b></span>
+        <span>{productName}</span><span><b>₹{price*bagItems[id]}</b></span>
     </div>
   )
 }
