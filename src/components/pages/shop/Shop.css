@@ -19,6 +19,15 @@
     width: 67%;
     display: flex;
 }
+.sortBy{
+    height: 23px;
+    width: 17%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
 .leftContainer{
     width: 18%;
     height: 500px;

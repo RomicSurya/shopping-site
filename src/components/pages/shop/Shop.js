@@ -24,7 +24,8 @@ function Shop() {
         <option>48</option>
       </select>
       </div>
-        <div>
+        <div className='sortBy'>
+        <p><b>SORT BY:</b></p>
         <select className='fsortby'>
         <option>Recommended</option>
         <option>What's New</option>
